@@ -1,0 +1,64 @@
+
+body{
+    /* background-color: rgba(128, 128, 128, 0.537); */
+}
+.container{
+    margin-left: 30%;
+    margin-top: 10%;
+    box-shadow: 0 2px 3px 3px  rgba(0, 0, 0, 0.717);
+   width: 500px;
+   height: 800px;
+   text-align: center;
+
+    
+    
+    
+}
+.container h1{
+    margin-right: 20%;
+    color: blue;
+    margin-left: 150px;
+
+    /* text-align: center; */
+}
+
+.logo-size{
+    width: 130px;
+    margin-left: 140px;
+}
+.input{
+    width: 400px;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.submit{
+    width: 360px;
+    height: 39px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.594);
+    color: white;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+.submit:hover{
+    width: 120px;
+    height: 39px;
+    border-radius: 50px;
+    background-color:white;
+    color:blue;
+    font-size: 16px;
+    cursor: pointer;
+}
+.label{
+    margin-right: 355px;
+}
+.label1{
+    margin-right: 290px;
+}
+.label2{
+    margin-right: 310px;
+}

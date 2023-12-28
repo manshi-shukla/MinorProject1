@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign-up2.css">
+    
+    <style>
+         #error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="flex header-box ">
+            <div class="logo-box">
+                <img id="IMG" src="Black White Elegant Monogram Initial Name Logo.png" alt="">
+            </div>
+
+            <div class="flex ">
+
+                <div class="Home"><a class="font-col " href="#">Home</a></div>
+                <div class="About"><a class="font-col" href="#">About</a></div>
+                <div class="our"><a class="font-col" href="#">our services </a></div>
+                <div class="Contact"> <a class="font-col" href="Contact"> Contact </a></div>
+
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <main class="containter1">
+
+        <div class="content ">
+            <!-- <div><button class="box1" href="#"> Add company </button></div> -->
+            <div class="box2"><a href="login2.html">Sign in </a></div>
+            <div class="box3"> <a href="sign-up2.html"> Sign up</a></div>
+        </div>
+
+        <div class="IMG">
+            <div class="box1-tex">
+                <!-- <h1>BOT FOR STOCK</h1> -->
+                <img class="IMG" src="Inventory.jpg" alt="">
+
+                
+            </div>
+            <div class="container">
+                <form action="">
+        
+                    <h1>Sign up</h1>
+                    <div>
+                        <label class="label" for="Name">Name</label><br>
+                        <input class="input" type="text" name="Name" id="Name" placeholder="Enter  your name" required><br>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="label1" for="phon">Phone_number:</label><br>
+                        <input class="input" type="number" name="" id="phon">
+                    </div>
+                    <br>
+                    <div>
+                        <label class=" label" for="email">Email:</label><br>
+                        <input class="input" type="email" name="" id="email" placeholder="Enter your mail" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label  class="label2" for="users">Choose Role:</label><br>
+                        <select class="input" name="User" id="users">
+                            <option value="As a Admin user">As a Admin user</option>
+                            <option selected value="As a guist user">As a guest user</option>
+                            <option value="As  a I/O user">As a I/O user</option>
+                        </select>
+                    </div>
+                    <br>
+                
+                    <div>
+        
+                        <label class="label1" for="password">Create password:</label><br>
+                        <input class="input" type="password" name="password" id="password" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="label1" for="confirm-password">Confirm password:</label>
+                        <input class="input" type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                    <br>
+        
+                    <button class="submit"   onclick="validatePassword()" >submit</button>
+        
+                    <!-- <button class="submit"   onclick="validatePassword()" ><a  href="Admin.html">submit</a></button> -->
+                    <p id="error-message"></p>
+                    <!-- <div><input class="submit" type="submit" value="Submit" src="Admin.html"></div> -->
+                    <div> <p>Already have account <a href="login2.html">login</a></p></div>
+                </form>
+        
+            </div>
+        </div>
+        
+
+
+    <footer>
+        <div class="bg-black text-white" style="width: 100vw; height: 200pxpx;">
+            <div class="containe">
+               
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+            var errorMessage = document.getElementById("error-message");
+    
+            if (password !== confirmPassword) {
+                errorMessage.textContent = "Passwords do not match!";
+            } else {
+                errorMessage.textContent = "";
+                // You can add additional logic for form submission here
+                // For example, you might want to submit the form using AJAX
+                // or redirect the user to another page.
+            }
+        }
+    </script>
+
+</body>
+
+</html>
